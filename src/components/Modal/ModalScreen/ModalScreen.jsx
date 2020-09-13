@@ -1,12 +1,18 @@
 import React from 'react';
+
 import Modal from '@material-ui/core/Modal';
+
 import ModalCard from '../ModalCard/ModalCard.jsx';
 
 
 
 const ModalScreen = (props) => {
   
-  const { open, setOpen, setCity, data } = props;
+  const { open,
+          setOpen, 
+          setCity, 
+          data 
+        } = props;
 
   const { forecast } = data;
 

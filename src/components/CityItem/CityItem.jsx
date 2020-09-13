@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -9,6 +10,7 @@ import Container from '@material-ui/core/Container';
 
 import WeatherCondition from '../customComponents/WeatherCondition/WeatherCondition.jsx';
 import CityName from '../customComponents/CityName/CityName.jsx'
+
 import weatherIcons from "../icons.js";
 import useStyles from './useStyles.js';
 
@@ -19,8 +21,17 @@ const CityItem = (props) => {
   
   const classes = useStyles();
 
-  const { onOpen, data, setCity } = props;
-  const { cityName, iconId, currTemp, humidity, wind } = data;
+  const { onOpen, 
+          data, 
+          setCity 
+        } = props;
+
+  const { cityName, 
+          iconId, 
+          currTemp, 
+          humidity, 
+          wind 
+        } = data;
 
   const icon = `wi wi-${weatherIcons[iconId].icon}`;
 

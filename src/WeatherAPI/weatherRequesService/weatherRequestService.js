@@ -2,7 +2,8 @@ import key from '../APIkey/key.js';
 import weatherDataParser from '../weatherDataParser/weatherDataParser.js';
 import cityList from '../cityList/cityList.js';
 
- const weatherCityRequest = async (cityName) => {
+
+const weatherCityRequest = async (cityName) => {
 
   const reqBase = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${key}`;
 
@@ -22,6 +23,7 @@ import cityList from '../cityList/cityList.js';
     return weatherData;
   
 }
+
 
 const weatherRequestService = async () => {
     const cities = Object.values(cityList);

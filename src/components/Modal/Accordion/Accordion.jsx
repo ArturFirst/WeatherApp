@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Accordion from '@material-ui/core/Accordion';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -8,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Container from '@material-ui/core/Container';
 
 import WeatherCondition from '../../customComponents/WeatherCondition/WeatherCondition.jsx';
+
 import weatherIcons from "../../icons.js";
 import useStyles from './useStyles.js';
 
@@ -75,7 +77,7 @@ const ControlledAccordions = (props) => {
                                   idx={i} 
                                   expanded={expanded}
                                   handleChange={handleChange}
-                                  />)}
+                                />)}
       </div>
   );
 }

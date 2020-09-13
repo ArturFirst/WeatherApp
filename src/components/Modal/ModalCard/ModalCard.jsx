@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -6,16 +7,21 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import Accordion from '../Accordion/Accordion.jsx';
 
-import CityName from '../../customComponents/CityName/CityName';
+import Accordion from '../Accordion/Accordion.jsx';
+import CityName from '../../customComponents/CityName/CityName.jsx';
+
 import useStyles from './useStyles.js';
 
 
 const ModalCard = (props) => {
   
-  const { onClose, data } = props;
-  const { cityName } = data[0];  
+  const { onClose, 
+          data 
+        } = props;
+
+  const { cityName } = data[0];
+
   const classes = useStyles();
 
   return (

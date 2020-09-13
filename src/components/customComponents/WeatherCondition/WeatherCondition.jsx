@@ -1,12 +1,17 @@
 import React from 'react';
+
 import Typography from '@material-ui/core/Typography';
+
 import Container from '@material-ui/core/Container';
+
 import useStyles from './useStyles.js'
 
 
 const WeatherCondition = (props) => {
 
-    const { humidity, wind } = props;
+    const { humidity, 
+            wind 
+          } = props;
 
     const classes = useStyles()
 

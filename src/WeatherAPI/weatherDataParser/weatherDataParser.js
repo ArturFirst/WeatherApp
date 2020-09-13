@@ -1,6 +1,8 @@
 import dayjs from 'dayjs';
 import 'dayjs/locale/ru';
+
 import cityList from '../cityList/cityList.js';
+
 
 const getDate = (data) => data.slice(0, 10);
 
@@ -15,7 +17,11 @@ const windSpeed = (data) => `${Math.round(data)} м/с`;
 
 const weatherByDay = (data, { id }) => {
   
-  const { main, weather, wind, dt_txt } = data;
+  const { main, 
+          weather, 
+          wind, 
+          dt_txt 
+        } = data;
   
   return {
     cityName: cityList[id],
