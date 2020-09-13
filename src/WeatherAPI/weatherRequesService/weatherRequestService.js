@@ -4,7 +4,7 @@ import cityList from '../cityList/cityList.js';
 
  const weatherCityRequest = async (cityName) => {
 
-  const reqBase = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${key}`;
+  const reqBase = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${key}`;
 
   const getData = async (url) => {
     
